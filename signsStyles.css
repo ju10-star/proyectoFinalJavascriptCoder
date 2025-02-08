@@ -1,0 +1,174 @@
+/* Degrade azul a negro */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(0deg, #45417c 20%, #1a1542 101%);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+
+    /* portada */
+    background: url('/statics/background.JPG') no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+/* Formulario de login */
+#login-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente */
+    padding: 30px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    width: 300px; /* Ancho fijo del formulario */
+    text-align: center; /* Centra el texto dentro del formulario */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos del formulario */
+}
+
+/* Título del formulario */
+#login-form h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilos campos de entrada */
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón */
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #45417c;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #1a1542;
+}
+
+/* Formulario de signUp */
+#signUp-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 30px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    width: 300px; /* Ancho fijo del formulario */
+    text-align: center; /* Centra el texto dentro del formulario */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos del formulario */
+}
+
+/* Título del formulario */
+#signUp-form h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilos de los campos */
+#signUp-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón */
+#signUp-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #45417c;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signUp-form button:hover {
+    background-color: #1a1542;
+}
+
+
+
+
+
+
+/* Estilo para ítems */
+.item {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Ítems izquierda */
+.right-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+/* Ítems derecha */
+.left-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+/* Achicar items */
+.item {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+
+

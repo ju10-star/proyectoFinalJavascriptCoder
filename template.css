@@ -1,0 +1,199 @@
+/* Degrade de azul a negro */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(0deg, #45417c 20%, #1a1542 101%);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+    background: url('/statics/background.JPG') no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* ítems */
+.item {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Ítems izquierda */
+.right-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+/* Ítems derecha */
+.left-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+/* Achicar items */
+.item {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Estilo de los formularios */
+#formulario-canciones, #login-form, #signUp-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Titulo del formulario */
+#formulario-canciones h2, #login-form h2, #signUp-form h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilos de los campos */
+#formulario-canciones input, #login-form input, #signUp-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón */
+#formulario-canciones button, #login-form button, #signUp-form button {
+    padding: 10px;
+    border: none;
+    background-color: #45417c;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#formulario-canciones button:hover, #login-form button:hover, #signUp-form button:hover {
+    background-color: #1a1542;
+}
+
+/* Estilo del contenedor */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/statics/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título del abm */
+h1 {
+    font-size: 24px;
+    color: #45417c;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+/* Estilo del ABM */
+#listaCanciones {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+button {
+    width: auto;
+    padding: 10px;
+    border: none;
+    background-color: #45417c;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #1a1542;
+}
+
+/* Estilo de los ítems de canciones */
+.cancion-item {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.cancion-item strong {
+    font-size: 16px;
+}
+
+/* Estilo para el mensaje cuando no hay canciones */
+#listaCanciones p {
+    font-size: 16px;
+    color: #45417c;
+    font-weight: normal;
+}
+
+
+
+

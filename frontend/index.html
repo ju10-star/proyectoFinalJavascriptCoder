@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Canciones</title>
+    <link rel="stylesheet" href="/template.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-items">
+            <a href="logIn.html" class="item">Iniciar sesión</a>
+            <a href="signUp.html" class="item">Registrarse</a>
+        </div>
+        <div class="right-items">
+            <a href="index.html" class="item">Home</a>
+            <a href="right-item2.html" class="item">Item 2</a>
+            <a href="right-item3.html" class="item">Item 3</a>
+        </div>
+        <div>
+            <h1>Subir y reproducir</h1>
+
+            <!-- Botonera agregar y filtrar canciones -->
+            <button id="agregarCancionBtn">Agregar Canción</button>
+            <button id="filtrarCancionesBtn">Filtrar Canciones por Género</button>
+            <script src="/backend/searchForm.js" defer></script>
+
+            <!-- Lista canciones -->
+            <div id="songList">
+            <!-- mostrar canciones -->
+            </div>
+        </div>
+        <div>
+            <h2>Subir Canción</h2>
+            <input type="file" id="subirArchivo" accept="audio/*">
+            <button id="btnSubir">Subir</button>
+        
+            <h2>Canciones Disponibles</h2>
+            <div id="listaCanciones"></div>
+        
+            <audio id="reproductor" controls style="display:none;"></audio>
+        
+            <script src="main.js"></script>
+        </div>
+    </div>
+    <script src="/backend/main.js"></script>
+    <script src="/backend/server.js"></script>
+    <script src="/backend/signUp.html"></script>
+    <script src="/backend/logIn.html"></script>
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert2 JS --> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
